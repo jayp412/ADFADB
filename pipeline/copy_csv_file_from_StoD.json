@@ -49,13 +49,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "jpazstorage1LS",
+						"referenceName": "inputDS",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "jpazstorage2LS",
+						"referenceName": "outputDS",
 						"type": "DatasetReference"
 					}
 				]
