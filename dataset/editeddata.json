@@ -1,0 +1,23 @@
+{
+	"name": "editeddata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "jpazstorage2LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "irisedited",
+				"container": "transformeddata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
