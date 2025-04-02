@@ -1,0 +1,9 @@
+{
+	"name": "jptrainingADF",
+	"location": "ukwest",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "707ba1cf-2f0f-4ac4-987f-ce2430352ee0",
+		"tenantId": "8b4ec0c7-9e79-4e6b-9f9d-f57ad49dcfef"
+	}
+}
