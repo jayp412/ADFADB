@@ -1,5 +1,5 @@
 {
-	"name": "editeddata",
+	"name": "editoutputDS",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "jpazstorage2LS",
