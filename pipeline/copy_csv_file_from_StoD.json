@@ -1,5 +1,5 @@
 {
-	"name": "copy",
+	"name": "copy_csv_file_from_StoD",
 	"properties": {
 		"activities": [
 			{
