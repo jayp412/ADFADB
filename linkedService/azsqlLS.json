@@ -11,7 +11,10 @@
 			"trustServerCertificate": false,
 			"authenticationType": "SQL",
 			"userName": "adminuser",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDJBRjA4QkEzLTcwMUQtNDlFNi1CQjhBLTgwRTU0NzU1OUI4Rl9iNWE0ZWNmMC04Y2UzLTRlZjUtYWZkNy0xMTcyODI5ZTFiMTgiDQp9"
+			"alwaysEncryptedSettings": {
+				"alwaysEncryptedAkvAuthType": "ManagedIdentity"
+			},
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDJBRjA4QkEzLTcwMUQtNDlFNi1CQjhBLTgwRTU0NzU1OUI4Rl8zYzAxNWI3My04ODc0LTRlODktYmUwOS03MDg3MmZlN2QwMTMiDQp9"
 		},
 		"connectVia": {
 			"referenceName": "AutoResolveIntegrationRuntime",
