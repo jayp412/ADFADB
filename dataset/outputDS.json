@@ -1,5 +1,5 @@
 {
-	"name": "jpazstorage2LS",
+	"name": "outputDS",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "jpazstorage2LS",
