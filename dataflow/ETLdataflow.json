@@ -1,0 +1,57 @@
+{
+	"name": "ETLdataflow",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "inputDS",
+						"type": "DatasetReference"
+					},
+					"name": "irissource"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "editoutputDS",
+						"type": "DatasetReference"
+					},
+					"name": "ouput",
+					"rejectedDataLinkedService": {
+						"referenceName": "jpazstorage2LS",
+						"type": "LinkedServiceReference"
+					}
+				}
+			],
+			"transformations": [
+				{
+					"name": "alterRow1"
+				},
+				{
+					"name": "derivedColumn1"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          Id as short,",
+				"          SepalLengthCm as double,",
+				"          SepalWidthCm as double,",
+				"          PetalLengthCm as double,",
+				"          PetalWidthCm as double,",
+				"          Species as string",
+				"     ),",
+				"     allowSchemaDrift: false,",
+				"     validateSchema: true,",
+				"     ignoreNoFilesFound: true) ~> irissource",
+				"irissource alterRow(updateIf(Species=='Iris-setosa')) ~> alterRow1",
+				"alterRow1 derive(total = SepalLengthCm*SepalWidthCm) ~> derivedColumn1",
+				"derivedColumn1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> ouput"
+			]
+		}
+	}
+}
